@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-height, initial-scale=1.0">
+  <link rel="stylesheet" href="registration_site.css">
+  <title>Officer Registration</title>
+</head>
+<body>
+
+  <div class="title">
+    <h1>Officer Identity Registration</h1>
+    <hr>
+  </div>
+
+  <form action="register.php" method="POST">
+
+    <div class="form">
+      <h2>Personnel details:</h2>
+
+      <label for="firstname">First name:</label>
+      <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" required>
+      <br><br>
+
+      <label for="lastname">Second name:</label>
+      <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required>
+      <br><br>
+
+      <label for="surname">Surname:</label>
+      <input type="text" id="surname" name="surname" placeholder="Enter your surname">
+      <br><br>
+
+      <label for="telephone">Telephone no:</label>
+      <input type="text" id="telephone" name="telephone" placeholder="Enter your number">
+      <br><br>
+
+      <label for="identity">National ID:</label>
+      <input type="text" id="officer_id" name="national_id" placeholder="Enter your ID/passport">
+      <br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+      <br><br>
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Choose a username" required>
+      <br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Choose a password" required>
+      <br><br>
+    </div>
+
+    <div class="form1">
+      <h2>Department details:</h2>
+
+      <label for="badge">Badge number:</label>
+      <input type="text" id="badge" name="badge_number" placeholder="Enter your badge number">
+      <br><br>
+
+      <label for="year">Year Of Employment:</label>
+      <input type="number" id="year" name="year_of_employment" placeholder="Enter year started">
+      <br><br>
+
+      <label for="branch">Station:</label>
+      <input type="text" id="branch" name="station" placeholder="Enter your branch location">
+      <br><br>
+    </div>
+
+    <hr>
+    <h2>Declaration of Originality:</h2>
+    <p>I hereby declare that the information I have provided is mine and does not belong to someone else. If found guilty of using someone’s information, the organization may impose heavy fines which could lead to losing my career.</p>
+   
+     <div class="checkbox">
+     <label>
+     <input type="checkbox" id="DECLARATION" name="DECLARATION" required> 
+    </label>
+     </div>
+
+     <div class="agree">
+      <p>I agree to the above declaration</p> 
+     </div>
+    <br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>

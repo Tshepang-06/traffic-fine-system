@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="Tickets.css">
+    <title>Tickets</title>
+</head>
+<body>
+   <div class="container">
+     <div class="top">
+       <a href="dash.php" class="link">back</a>
+      <!--<h1>Hello Tshepang</h1>--> 
+     </div>
+     <h2>Issue New Ticket</h2>
+
+     <form action="process_tickets.php" method="POST">
+          
+        <label for="driver_name">Driver Name:</label>
+        <input type="text" id="driver_name" name="driver_name" required>
+        <br>
+        <br>
+        <label for="driver_id">Driver ID/licence num:</label>
+        <input type="text" id="driver_id" name="driver_id" required>
+        <br>
+        <br>
+        <label for="car_num">Car Number Plate:</label>
+        <input type="text" id="car_num" name="car_num" required> 
+        <br>
+        <br>
+        <label for="ticket_type">Ticket Type:</label>
+        <select id="ticket_type" name="ticket_type" required>
+            <option value="speeding">Speeding</option>
+            <option value="no_licence">No licence</option>
+            <option value="expired_Disc">Expired Disc</option>
+            <option value="illegal_parking">Seatbealt Violation</option>
+            <option value="red_light">Red light Violation</option>
+            <option value="texting">Phone While Driving</option>
+            <option value="drunk_driving">Drink and Driving</option>        
+        </select>
+        <br>
+        <br>
+
+       <label for="fine">Fine Amount R:</label>
+       <input type="text" id="fine" name="fine" required>
+        <br>
+        <br>
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+        <br>
+        <br> 
+        <label for="officer_id">Officer:</label>
+        <select id="officer_id" name="officer_id" required>
+           <?php 
+           ?>
+
+        </select>
+        <div class="notes">
+         <label for="notes">Notes:</label>
+         <textarea id="notes" name="notes"></textarea> 
+         
+       </div> 
+       <br>
+       <br> 
+       
+     <button type="submit">Submit Ticket</button>
+    </form>
+   </div>  
+</body>
+</html>

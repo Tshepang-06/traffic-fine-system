@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: grey;
+
+
+}
+
+.top {
+    font-weight: bold;
+    font-size:xx-large;
+    
+}
+
+.top .link {
+   text-decoration: none;
+    font-weight: bold;
+    color: white;
+    border: 1px solid rgb(3, 3, 3);
+    background: black;
+    border-radius: 10px;
+
+}
+
+.top .link:hover{
+    background: grey;
+}
+
+h2 {
+    color: #f1f1f1;
+    text-align: center;
+    
+}
+
+form {
+    width: 400px;
+    border: 2px solid #070707;
+    background: #f9f9f9;
+    padding:29px;
+    border-radius: 28px;
+    
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top:10px;
+
+}
+
+input, select, textarea {
+
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #acc;
+    height: 40px;
+    font-size: large;
+}
+
+label {
+    font-size: large;
+}
+
+.notes input {
+    height: 100px;
+}
+button {
+    border-radius: 8px;
+    width:100px;
+    height:30px;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background: #0056b3;
+}
