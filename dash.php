@@ -1,7 +1,6 @@
 <?php 
 
-session_start();
-//var_dump($_SESSION);
+session_start()
 
 //connecting to the database
 $conn = new mysqli("localhost", "root", "", "officer_db", 3307);
